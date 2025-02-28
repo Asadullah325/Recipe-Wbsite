@@ -1,0 +1,136 @@
+[
+    {
+      "name": "Spaghetti Carbonara",
+      "ingredients": "Spaghetti, Eggs, Pancetta, Parmesan Cheese, Black Pepper, Salt",
+      "time": "25 min",
+      "instructions": "Boil spaghetti. In a pan, cook pancetta. Beat eggs with cheese. Mix everything with pasta and season.",
+      "__v": 0
+    },
+    {
+      "name": "Chicken Alfredo",
+      "ingredients": "Fettuccine, Chicken Breast, Heavy Cream, Parmesan Cheese, Garlic, Butter, Salt, Pepper",
+      "time": "30 min",
+      "instructions": "Cook fettuccine. Sauté chicken and garlic in butter. Add cream and cheese. Mix with pasta.",
+      "__v": 0
+    },
+    {
+      "name": "Beef Tacos",
+      "ingredients": "Ground Beef, Taco Shells, Onion, Garlic, Tomatoes, Lettuce, Cheese, Taco Seasoning",
+      "time": "20 min",
+      "instructions": "Cook beef with onion, garlic, and seasoning. Assemble tacos with toppings.",
+      "__v": 0
+    },
+    {
+      "name": "Vegetable Stir-Fry",
+      "ingredients": "Broccoli, Carrot, Bell Peppers, Soy Sauce, Garlic, Ginger, Tofu",
+      "time": "15 min",
+      "instructions": "Stir-fry vegetables and tofu in soy sauce, garlic, and ginger.",
+      "__v": 0
+    },
+    {
+      "name": "Grilled Salmon",
+      "ingredients": "Salmon Fillet, Lemon, Garlic, Olive Oil, Salt, Pepper",
+      "time": "20 min",
+      "instructions": "Marinate salmon with lemon, garlic, and oil. Grill until cooked.",
+      "__v": 0
+    },
+    {
+      "name": "Caesar Salad",
+      "ingredients": "Romaine Lettuce, Croutons, Parmesan Cheese, Caesar Dressing",
+      "time": "10 min",
+      "instructions": "Toss lettuce with croutons, cheese, and dressing.",
+      "__v": 0
+    },
+    {
+      "name": "Pancakes",
+      "ingredients": "Flour, Milk, Eggs, Baking Powder, Sugar, Butter",
+      "time": "15 min",
+      "instructions": "Mix ingredients. Cook pancakes on a skillet.",
+      "__v": 0
+    },
+    {
+      "name": "Margherita Pizza",
+      "ingredients": "Pizza Dough, Tomato Sauce, Mozzarella, Basil",
+      "time": "30 min",
+      "instructions": "Spread sauce on dough, top with cheese and basil, bake.",
+      "__v": 0
+    },
+    {
+      "name": "Garlic Butter Shrimp",
+      "ingredients": "Shrimp, Garlic, Butter, Parsley, Lemon",
+      "time": "15 min",
+      "instructions": "Sauté shrimp with garlic and butter. Garnish with parsley and lemon.",
+      "__v": 0
+    },
+    {
+      "name": "Chili Con Carne",
+      "ingredients": "Ground Beef, Beans, Tomatoes, Onion, Garlic, Chili Powder",
+      "time": "40 min",
+      "instructions": "Cook beef with onion and garlic. Add tomatoes, beans, and spices. Simmer.",
+      "__v": 0
+    },
+    {
+      "name": "French Toast",
+      "ingredients": "Bread, Eggs, Milk, Cinnamon, Sugar, Butter",
+      "time": "15 min",
+      "instructions": "Dip bread in egg mixture. Cook on skillet with butter.",
+      "__v": 0
+    },
+    {
+      "name": "Lasagna",
+      "ingredients": "Lasagna Noodles, Ground Beef, Tomato Sauce, Ricotta Cheese, Mozzarella",
+      "time": "60 min",
+      "instructions": "Layer ingredients and bake until golden.",
+      "__v": 0
+    },
+    {
+      "name": "Beef Stew",
+      "ingredients": "Beef, Carrots, Potatoes, Onion, Garlic, Beef Broth",
+      "time": "120 min",
+      "instructions": "Brown beef. Simmer with vegetables and broth.",
+      "__v": 0
+    },
+    {
+      "name": "Crispy Chicken Wings",
+      "ingredients": "Chicken Wings, Flour, Salt, Pepper, Paprika",
+      "time": "45 min",
+      "instructions": "Coat wings in seasoned flour and bake or fry.",
+      "__v": 0
+    },
+    {
+      "name": "Miso Soup",
+      "ingredients": "Miso Paste, Tofu, Seaweed, Green Onions",
+      "time": "10 min",
+      "instructions": "Dissolve miso paste in hot water. Add tofu and seaweed.",
+      "__v": 0
+    },
+    {
+      "name": "Egg Fried Rice",
+      "ingredients": "Rice, Eggs, Soy Sauce, Green Onions, Carrots",
+      "time": "15 min",
+      "instructions": "Stir-fry rice with eggs, vegetables, and soy sauce.",
+      "__v": 0
+    },
+    {
+      "name": "Caprese Salad",
+      "ingredients": "Tomatoes, Mozzarella, Basil, Olive Oil, Balsamic Vinegar",
+      "time": "10 min",
+      "instructions": "Slice tomatoes and mozzarella. Drizzle with oil and vinegar.",
+      "__v": 0
+    },
+    {
+      "name": "Baked Ziti",
+      "ingredients": "Ziti Pasta, Tomato Sauce, Ricotta Cheese, Mozzarella",
+      "time": "40 min",
+      "instructions": "Mix pasta with sauce and cheese. Bake until bubbly.",
+      "__v": 0
+    },
+    {
+      "name": "Stuffed Peppers",
+      "ingredients": "Bell Peppers, Ground Beef, Rice, Tomato Sauce",
+      "time": "50 min",
+      "instructions": "Stuff peppers with mixture and bake.",
+      "__v": 0
+    }
+  ]
+  
