@@ -1,5 +1,6 @@
 import express from "express";
-import rec from "./routes/recipe.router.js";
+import recRoutes from "./routes/recipe.router.js";
+import userRoutes from "./routes/userRoutes.js";
 import connectDB from "./database/db.js";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -11,7 +12,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-app.use("/api/recipes", rec);
+app.use("/api/recipes", recRoutes);
+app.use("/api/user", userRoutes)
 
 connectDB()
   .then(() => {

@@ -9,7 +9,7 @@ const getAllRecipes = async () => {
   try {
     const response = await axios.get("http://localhost:3001/api/recipes");
     allRedipes = response.data;
-    return allRedipes
+    return allRedipes;
   } catch (error) {
     console.log(error);
   }
@@ -25,6 +25,14 @@ const router = createBrowserRouter([
         element: <Home />,
         loader: getAllRecipes,
       },
+      {
+        path: "/myrecipes",
+        element: <Home />,
+      },
+      {
+        path: "favourites",
+        element: <Home />,
+      }
     ],
   },
 ]);

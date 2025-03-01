@@ -1,10 +1,9 @@
-import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { MdOutlineWatchLater } from "react-icons/md";
-import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 
 const RecipeItems = () => {
-  const allResipes = useLoaderData();
+  const allResipes = useLoaderData() || []; // Ensure it's an array
 
   return (
     <div className="container mx-auto mb-10">
@@ -21,7 +20,7 @@ const RecipeItems = () => {
             >
               <img
                 src="pizza.png"
-                alt=""
+                alt={recipe.name}
                 className="w-[300px] mb-2 self-center"
               />
               <h2 className="text-xl font-bold mb-2">{recipe.name}</h2>
@@ -32,7 +31,7 @@ const RecipeItems = () => {
               <p className="mb-2">{recipe.ingredients}</p>
               <p className="mb-2">{recipe.instructions}</p>
               <div className="flex items-center space-x-2 justify-end absolute bottom-4 right-4 z-10">
-                <FaHeart className="inline-block w-6 h-6" />
+                <FaRegHeart className="inline-block w-6 h-6" />
               </div>
             </div>
           ))}
