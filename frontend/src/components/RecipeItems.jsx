@@ -19,7 +19,7 @@ const RecipeItems = () => {
               className="flex flex-col border p-4 my-1 relative shadow-md cursor-pointer rounded-md bg-gray-300 hover:scale-103 transition-transform duration-500"
             >
               <img
-                src="pizza.png"
+                src={`http://localhost:3001/public/images/${recipe.image}`}
                 alt={recipe.name}
                 className="w-[300px] mb-2 self-center"
               />

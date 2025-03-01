@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainNavigation from "./components/MainNavigation";
 import axios from "axios";
+import AddRecipe from "./pages/AddRecipe";
 
 const getAllRecipes = async () => {
   let allRedipes = [];
@@ -30,9 +31,13 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "favourites",
+        path: "/favourites",
         element: <Home />,
-      }
+      },
+      {
+        path: "/addrecipe",
+        element: <AddRecipe />,
+      },
     ],
   },
 ]);

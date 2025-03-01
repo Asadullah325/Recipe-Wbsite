@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import RecipeItems from "../components/RecipeItems";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="bg-gray-100 min-h-screen">
@@ -16,7 +19,10 @@ const Home = () => {
               molestiae ipsam eum repellendus, aliquid ut minima nulla impedit
               quis numquam.
             </p>
-            <button className="px-5 py-2 bg-red-600 hover:bg-red-700 cursor-pointer text-white rounded-md">
+            <button
+              className="px-5 py-2 bg-red-600 hover:bg-red-700 cursor-pointer text-white rounded-md"
+              onClick={() => navigate("/addrecipe")}
+            >
               Share Your Recipe
             </button>
           </div>

@@ -1,4 +1,17 @@
 import Recipe from "../models/recipeModel.js";
+import multer from "multer";
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public/images')
+  },
+  filename: function (req, file, cb) {
+    const filename = Date.now() + '-' + file.fieldname
+    cb(null, filename)
+  }
+})
+
+export const upload = multer({ storage: storage })
 
 export const getRecipes = async (req, res) => {
   try {
@@ -26,6 +39,8 @@ export const getRecipe = async (req, res) => {
 
 export const createRecipe = async (req, res) => {
   try {
+    console.log(req.file);
+    
     const { name, ingredients, instructions, time } = req.body;
 
     if (!name || !ingredients || !instructions) {
@@ -37,6 +52,7 @@ export const createRecipe = async (req, res) => {
       ingredients,
       instructions,
       time,
+      image: req.file.filename
     });
 
     res.status(201).json(newRecipe);
