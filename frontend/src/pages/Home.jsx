@@ -1,9 +1,22 @@
 import React, { useState } from "react";
 import RecipeItems from "../components/RecipeItems";
 import { useNavigate } from "react-router-dom";
+import Model from "../components/Model";
+import InputForm from "../components/inputForm";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const addRecipe = () => {
+    let token = localStorage.getItem("jwt");
+
+    if (token) {
+      navigate("/addrecipe");
+    } else {
+      setIsOpen(true);
+    }
+  };
 
   return (
     <>
@@ -21,7 +34,7 @@ const Home = () => {
             </p>
             <button
               className="px-5 py-2 bg-red-600 hover:bg-red-700 cursor-pointer text-white rounded-md"
-              onClick={() => navigate("/addrecipe")}
+              onClick={addRecipe}
             >
               Share Your Recipe
             </button>
@@ -30,6 +43,11 @@ const Home = () => {
             <img src="pizza.png" alt="" className="w-[400px]" />
           </div>
         </div>
+        {isOpen && (
+          <Model onClose={() => setIsOpen(false)}>
+            <InputForm setIsOpen={() => setIsOpen(false)} />
+          </Model>
+        )}
         <RecipeItems />
       </div>
     </>

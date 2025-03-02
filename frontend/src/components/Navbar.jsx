@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Model from "./Model";
 import InputForm from "./inputForm";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   let token = localStorage.getItem("jwt");
+  let user = JSON.parse(localStorage.getItem("user"));
 
   const [isOpen, setIsOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(token ? false : true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsLogin(token ? false : true);
@@ -18,6 +20,7 @@ const Navbar = () => {
       localStorage.removeItem("jwt");
       localStorage.removeItem("user");
       setIsLogin(true); // Set to false after logout
+      navigate("/");
     } else {
       setIsOpen(true); // Open the modal for login
     }
@@ -40,6 +43,7 @@ const Navbar = () => {
           <li className="cursor-pointer" onClick={checkLogin}>
             {isLogin ? "login" : "logout"}
           </li>
+          <li className="cursor-pointer">{user && user.name}</li>
         </ul>
       </nav>
       {isOpen && (

@@ -24,10 +24,9 @@ const InputForm = ({ setIsOpen }) => {
         })
         .then((res) => {
           localStorage.setItem("jwt", res.data.token);
-          localStorage.setItem("user", JSON.stringify(res.data.user.name));
+          localStorage.setItem("user", JSON.stringify(res.data.user));
           setIsOpen();
           alert(res.data.message);
-          console.log(res.data);
           setEmail("");
           setPassword("");
           setName("");

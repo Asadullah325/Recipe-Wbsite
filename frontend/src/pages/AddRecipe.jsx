@@ -7,7 +7,6 @@ const AddRecipe = () => {
   const navigate = useNavigate();
 
   const hadlechange = (e) => {
-    console.log(e.target.files);
     let val =
       e.target.type === "ingredientd"
         ? e.target.value.split(",")
@@ -23,10 +22,10 @@ const AddRecipe = () => {
       .post("http://localhost:3001/api/recipes/create", recipeData, {
         headers: {
           "Content-Type": "multipart/form-data",
+          Authorization: `Bearer ${localStorage.getItem("jwt")}`,
         },
       })
       .then((res) => {
-        console.log(res.data);
         navigate("/");
       });
   };
@@ -107,6 +106,7 @@ const AddRecipe = () => {
               type="file"
               id="image"
               name="file"
+              accept="image/*"
               onChange={hadlechange}
               className="w-full md:w-1/2 rounded border px-3 py-2 outline-none shadow-sm focus:ring focus:ring-blue-300"
             />

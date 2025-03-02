@@ -39,8 +39,7 @@ export const getRecipe = async (req, res) => {
 
 export const createRecipe = async (req, res) => {
   try {
-    console.log(req.file);
-    
+
     const { name, ingredients, instructions, time } = req.body;
 
     if (!name || !ingredients || !instructions) {
@@ -52,7 +51,8 @@ export const createRecipe = async (req, res) => {
       ingredients,
       instructions,
       time,
-      image: req.file.filename
+      image: req.file.filename,
+      createdBy: req.user.id
     });
 
     res.status(201).json(newRecipe);

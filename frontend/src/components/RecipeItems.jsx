@@ -21,7 +21,7 @@ const RecipeItems = () => {
               <img
                 src={`http://localhost:3001/public/images/${recipe.image}`}
                 alt={recipe.name}
-                className="w-[300px] mb-2 self-center"
+                className="w-full mb-2 self-center"
               />
               <h2 className="text-xl font-bold mb-2">{recipe.name}</h2>
               <div className="flex items-center mb-2 space-x-2">
