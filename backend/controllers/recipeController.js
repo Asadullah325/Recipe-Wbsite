@@ -76,9 +76,10 @@ export const updateRecipe = async (req, res) => {
       return res.status(404).json({ message: "Recipe not found" });
     }
 
+    let image = req.file?.filename ? req.file.filename : recipe.image;
     const updatedRecipe = await Recipe.findByIdAndUpdate(
       id,
-      { name, ingredients, instructions, time },
+      { name, ingredients, instructions, time, image },
       { new: true }
     );
 

@@ -14,7 +14,8 @@ const router = express.Router();
 router.get("/", getRecipes);
 router.get("/:id", getRecipe);
 router.post("/create", upload.single("file"), authMiddleware, createRecipe);
-router.put("/update/:id", updateRecipe);
+router.put("/update/:id",upload.single("file"), updateRecipe);
 router.delete("/delete/:id", deleteRecipe);
 
 export default router;
+
