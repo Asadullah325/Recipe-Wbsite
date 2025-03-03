@@ -26,6 +26,10 @@ const getMyRecipes = async () => {
   });
 };
 
+const getFavouriteRecipes = async () => {
+  return JSON.parse(localStorage.getItem("favourite"));
+};
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,6 +48,7 @@ const router = createBrowserRouter([
       {
         path: "/favourites",
         element: <Home />,
+        loader: getFavouriteRecipes,
       },
       {
         path: "/addrecipe",
